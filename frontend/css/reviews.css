@@ -1,0 +1,42 @@
+.testimonial-review{
+    padding: 60px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial-review .section-head{
+    margin-bottom: 20px;
+}
+.testimonial-review .single-review {
+    background: #eee;
+    border: 3px solid var(--primary-color);
+    padding: 50px 40px;
+    color: #000;
+    font-size: 15px;
+     position: relative;
+     margin-bottom: 10px;
+     text-align: center;
+     font-weight: 500;
+ }
+  .testimonial-review .single-review .name {
+    text-align: center;
+     font-size: 17px;
+    font-weight: 600;
+      margin-top: 10px;
+ }
+  .testimonial-review .single-review:before, .testimonial-review .single-review:after {
+    color: var(--primary-color);
+    font-size: 100px;
+    position: absolute;
+ }
+  .testimonial-review .single-review:before {
+    content: '“';
+    top: -10px;
+    left: 10px;
+ }
+  .testimonial-review .single-review:after {
+    content: '”';
+    bottom: -58px;
+    right: 10px;
+ }
+ 

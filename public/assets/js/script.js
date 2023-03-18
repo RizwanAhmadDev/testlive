@@ -1,0 +1,90 @@
+var $ = jQuery;
+
+$(document).ready(function (){
+    $('.hamburger').click(function(){
+        $('body').toggleClass('menu-active');
+    })
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('header').addClass('sticky-header');
+    } else {
+      $('header').removeClass('sticky-header');
+    }
+});
+
+$(function() {
+    // Owl Carousel
+    $(".banner-slider .owl-carousel").owlCarousel({
+      items: 1,
+      margin: 0,
+      loop: true,
+      nav: false,
+      dots: false,
+      infinite: true,
+      touchDrag  : false,
+      mouseDrag  : false,
+      autoplay: true,
+      autoplayTimeout: 4000
+    });
+  });
+  
+
+$("#carBtn").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".banner").offset().top}, 'slow');
+});
+
+
+
+
+$(function() {
+  // Owl Carousel
+  $(".packages .owl-carousel").owlCarousel({
+    loop: true,
+    dots: false,
+    infinite: true,
+    nav:true,
+    arrows: true,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive:{
+      0:{
+          items:1,
+      },
+      600:{
+          items:1,
+      },
+      992:{
+          items:2,
+      }
+  }
+  });
+});
+
+
+
+$(function() {
+  // Owl Carousel
+  $(".banner-testimonials .owl-carousel").owlCarousel({
+    items: 1,
+    margin: 0,
+    loop: true,
+    nav: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplayTimeout: 3000
+  });
+});
+
+
+
+
+
+
+
+
+
+
+})

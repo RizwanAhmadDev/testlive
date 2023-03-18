@@ -1,0 +1,29 @@
+.packages-content{
+    padding: 60px 0;
+}
+.packages .row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .packages .row > div{
+    width: 100%;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px #e2e2e2;
+    max-width: 360px;
+    margin-left: 10px;
+    margin-right: 10px
+  }
+  .packages .row > div .details_holder {
+    padding: 15px;
+  }
+  .packages .row > div .details_holder > *:not(.pkg_footer_holder){
+    margin-bottom: 10px;
+  }
+  .packages .row > div .image-holder, .packages .row > div .image-holder img{
+    max-width: 100%;
+  }
+  .packages .row > div .details_holder h2, .packages .row > div .details_holder i{
+    color: var(--primary-color);
+  }

@@ -1,0 +1,120 @@
+
+.form-holder{
+    max-width: 1080px;
+    margin: 50px auto;
+}
+.form-holder > .row{
+    display: flex;
+    box-shadow: 0 0 10px #cfcdcd;
+}
+
+.form-holder > .row > div{
+height: 100%;
+}
+
+.form-holder > .row .column_01 .contact-info{
+    background-color: #5cce93;
+    color: #fff;
+}
+.form-holder > .row .column_01 .contact-holder > *{
+    padding-bottom: 15px;
+}
+.form-holder > .row .column_01 ul li{
+    padding-bottom: 15px;
+}
+.form-holder > .row .column_01 ul li i{
+    margin-right: 10px;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.form-holder > .row .column_01 .contact-info a{
+    color: #fff;
+}
+
+.form-holder .column_02 form input{
+    border: 1px solid #bfbfbf;
+    height: 30px;
+    padding: 5px;
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+.form-holder .column_02 form textarea{
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    padding: 5px;
+    margin: 15px 0;
+    display: block;
+    border: 1px solid #bfbfbf;
+    min-width: 100%; max-width: 100%; max-height: 200px; min-height: 100px;
+}
+.form-holder .column_02 form button{
+    background-color: #5cce93;
+    border-color: #5cce93;
+    color: #fff;
+    font-size: 15px;
+}
+.addr-padding{
+    padding-left: 55px;
+}
+@media(max-width: 991px){
+    .form-holder{
+        padding: 20px 0;
+    }
+    .form-holder > .row > .column .contact-info i{
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .addr-padding{
+        padding-left: 35px;
+    }
+    .form-holder > .row > .column > div{
+        padding: 15px;
+    }
+}
+@media(max-width: 767px){
+    .form-holder > .row{
+        flex-flow: column;
+    }
+    .form-holder > .row > div.column{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .form-holder > .row{
+        padding-bottom: 30px;
+    }
+    .form-holder > .row > .column > div{
+        padding-bottom: 0;
+    }
+    .contact-holder{
+        display: flex;
+        flex-flow: column;
+    }
+    
+}
+@media(min-width: 992px){
+    .form-holder > .row > .column > div{
+        padding: 20px;
+    }
+    .form-holder > .row{
+        align-items: center;
+    }
+    .form-holder > .row > div.column_02{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .form-holder > .row .column_01{
+        width: 30%;
+    }
+}

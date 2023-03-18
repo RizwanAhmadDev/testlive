@@ -11,7 +11,7 @@
 
     <x-danger-button
         x-data=""
-        x-on:click.prevent="$dispatch('open-modal', 'confirm-user-deletion')"
+        x-on:click.prevent="$dispatch('open-modal', 'confirm-user-deletion')" class="btn btn-danger w-100 py-8 fs-4 mb-4 rounded-2"
     >{{ __('Delete Account') }}</x-danger-button>
 
     <x-modal name="confirm-user-deletion" :show="$errors->userDeletion->isNotEmpty()" focusable>
@@ -46,7 +46,7 @@
                     {{ __('Cancel') }}
                 </x-secondary-button>
 
-                <x-danger-button class="ml-3">
+                <x-danger-button class="btn btn-danger w-100 py-8 fs-4 mb-4 rounded-2 ml-3">
                     {{ __('Delete Account') }}
                 </x-danger-button>
             </div>
