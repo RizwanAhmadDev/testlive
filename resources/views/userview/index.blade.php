@@ -56,15 +56,16 @@
                   </div>
                 </div>
                 <div class="banner-form">
-                  <form id="bookTaxi">
-                    <h2>Book your Taxi</h2>
+                  <form id="bookTaxi" action=" {{ route('store_enquiry') }}" method="POST" enctype="multipart/form-data" >
+                    <h2>Submit Your Enquiry</h2>
+                    @csrf
                     <div class="form-inner">
                       <div class="form_column">
                         <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" required placeholder="Email">
+                        <input type="email" required name="email"placeholder="Email">
                         <input type="text" name="ph_nmbr" placeholder="Phone with Country Code">
                         <input type="text" name="countryname" placeholder="Country Name">
-                        <select>
+                        <select name="british_citizen">
                           <option value="">Are you British Citizen?</option>
                           <option value="yes">Yes</option>
                           <option value="no">No</option>
@@ -73,15 +74,15 @@
                       <div class="form_column">
                         <h3>Services We Offer:</h3>
                         <div class="firstpkg">
-                          <input type="checkbox" id="formTaxi" name="formTaxi" value="formTaxi">
+                          <input type="checkbox" id="formTaxi" name="formTaxi" value="need taxi">
                           <label for="formTaxi"> Taxi</label>
-                          <input type="checkbox" id="formHotels" name="formHotels" value="formHotels">
+                          <input type="checkbox" id="formHotels" name="formHotels" value="need hotel">
                           <label for="formHotels"> Hotels </label>
-                        <input type="checkbox" id="forTickets" name="forTickets" value="forTickets">
+                        <input type="checkbox" id="forTickets" name="forTickets" value="need ticket">
                         <label for="forTickets"> Tickets</label>
                         </div>
                         <div class="secondpkg">
-                          <input type="checkbox" id="umrahpkg" name="umrahpkg" value="umrahpkg">
+                          <input type="checkbox" id="umrahpkg" name="umrahpkg" value="need umrah package">
                           <label for="umrahpkg"> Umrah Package (All in one)</label>
                         </div>
                         <input type="text" name="pickup_addr" placeholder="Pick up Address">
@@ -96,7 +97,7 @@
                         </select> -->
                       </div>
                     </div>
-                    <button class="primary-btn">Request for Taxi</button>
+                    <button class="primary-btn" type="submit">Request for Taxi</button>
                   </form>
                 </div>
               </div>
@@ -390,7 +391,7 @@
               <h1>Choose Your Hotel</h1>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Contact Us</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Contact Us</a>
               </div>
           </div>
           <div class="row">
