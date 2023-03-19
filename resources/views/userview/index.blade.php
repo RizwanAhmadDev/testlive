@@ -57,20 +57,45 @@
                 </div>
                 <div class="banner-form">
                   <form id="bookTaxi">
-                    <h3>Book your Taxi</h3>
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="countryname" placeholder="Country Name">
-                    <input type="text" name="ph_nmbr" placeholder="Phone with Country Code">
-                    <input type="text" name="pickup_addr" placeholder="Pick up Address">
-                    <input type="text" name="destination" placeholder="Destination">
-                    <select name="selectvehicle" id="selectvehicle">
-                      <option value="">Select Vehicle</option>
-                      <option value="Camry Car">Camry Car</option>
-                      <option value="Innova Car">Innova Car</option>
-                      <option value="H1 Hyundai">H1 Hyundai</option>
-                      <option value="GMC">GMC</option>
-                      <option value="Coaster">Coaster</option>
-                    </select>
+                    <h2>Book your Taxi</h2>
+                    <div class="form-inner">
+                      <div class="form_column">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" required placeholder="Email">
+                        <input type="text" name="ph_nmbr" placeholder="Phone with Country Code">
+                        <input type="text" name="countryname" placeholder="Country Name">
+                        <select>
+                          <option value="">Are you British Citizen?</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+                      <div class="form_column">
+                        <h3>Services We Offer:</h3>
+                        <div class="firstpkg">
+                          <input type="checkbox" id="formTaxi" name="formTaxi" value="formTaxi">
+                          <label for="formTaxi"> Taxi</label>
+                          <input type="checkbox" id="formHotels" name="formHotels" value="formHotels">
+                          <label for="formHotels"> Hotels </label>
+                        <input type="checkbox" id="forTickets" name="forTickets" value="forTickets">
+                        <label for="forTickets"> Tickets</label>
+                        </div>
+                        <div class="secondpkg">
+                          <input type="checkbox" id="umrahpkg" name="umrahpkg" value="umrahpkg">
+                          <label for="umrahpkg"> Umrah Package (All in one)</label>
+                        </div>
+                        <input type="text" name="pickup_addr" placeholder="Pick up Address">
+                        <input type="text" name="destination" placeholder="Destination">
+                        <!-- <select name="selectvehicle" id="selectvehicle">
+                          <option value="">Select Vehicle</option>
+                          <option value="Camry Car">Camry Car</option>
+                          <option value="Innova Car">Innova Car</option>
+                          <option value="H1 Hyundai">H1 Hyundai</option>
+                          <option value="GMC">GMC</option>
+                          <option value="Coaster">Coaster</option>
+                        </select> -->
+                      </div>
+                    </div>
                     <button class="primary-btn">Request for Taxi</button>
                   </form>
                 </div>
@@ -140,6 +165,23 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="passport">
+        <div class="container">
+          <div class="row">
+            <div class="column column_01">
+              <div class="content-holder">
+                <div class="image-holder">
+                  <img src=" {{ asset('assets/images/passport.jpg') }}" alt="Umrah">
+                </div>
+              </div>
+            </div>
+            <div class="column column_02"></div>
+            <div class="column column_03"></div>
           </div>
         </div>
       </section>
@@ -336,13 +378,21 @@
             </div>
           </div>
           <div class="car-btn-holder">
-            <button href="#" class="primary-btn" id="carBtn">Book Ride</button>
+            <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
           </div>
         </div>
       </section>
 
       <section class="packages">
         <div class="container">
+          <div class="section-title">
+            <div class="heading">
+              <h1>Choose Your Hotel</h1>
+              </div>
+              <div class="button-holder">
+                <a href="/contact" class="primary-btn">Contact Us</a>
+              </div>
+          </div>
           <div class="row">
             <div class="column">
               <div class="image-holder">
