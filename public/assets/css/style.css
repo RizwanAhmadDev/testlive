@@ -93,6 +93,27 @@ p{
 .section-head h1{
   margin-bottom: 25px;
 }
+
+.section-title{
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.section-title .button-holder a{
+  margin-left: 0 auto;
+}
+@media(min-width: 480px){
+  .section-title{
+      flex-flow: row;
+      padding: 10px 30px;
+      justify-content: space-between
+  }
+}
+
+
+
 /*Header Style Start*/
 header.header{
     padding: 10px 0;
@@ -330,23 +351,16 @@ header .navbar #menu > li > a{
 
 .banner-form #bookTaxi{
   width: 100%;
-  max-width: 370px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 7px 0px #848ab89e;
 }
-#bookTaxi h3{
+#bookTaxi > h2{
   text-align: center;
 }
-.banner-form #bookTaxi > *:not(h3){
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.banner-form #bookTaxi > input{
+.banner-form #bookTaxi .form_column > input{
   height: 40px;
   outline: none;
   border: none;
@@ -358,15 +372,131 @@ header .navbar #menu > li > a{
 #bookTaxi input:focus{
   box-shadow: 0px 0px 15px 0px #d3d3449e
 }
-#bookTaxi #selectvehicle{
+#bookTaxi select{
   height: 40px;
   font-size: 17px;
   border: none;
+  border-radius: 3px;
+    box-shadow: 0px 0px 7px 0px #848ab89e;
+}
+.form_column h3{
+  font-size: 19px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+}
+#bookTaxi .secondpkg{
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  padding-left: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px 0px #848ab89e;
 }
 #bookTaxi .primary-btn{
-   margin-left: auto;
-  margin-right: auto;
+   margin: 10px auto;
 }
+.banner-form #bookTaxi .form-inner{
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.banner-form #bookTaxi .form-inner > div{
+  margin: 10px;
+  width: 50%;
+}
+.banner-form #bookTaxi .form-inner .form_column > *{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+}
+.banner-form #bookTaxi h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#bookTaxi .firstpkg{
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  padding-left: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px 0px #848ab89e;
+}
+.banner-form #bookTaxi *:not[type="checkbox"]{
+width: 100%;
+}
+#bookTaxi label{
+  font-size: 17px;
+  font-weight: 500;
+  padding-right: 15px;
+}
+#bookTaxi [type="checkbox"]{
+  margin-right: 5px;
+}
+@media(max-width: 1286px){
+  .banner-form #bookTaxi .form-inner{
+      display: block;
+  }
+  .banner-form #bookTaxi .form-inner > div{
+      width: 100%;
+      margin: 0;
+  }
+}
+@media(max-width: 767px){
+  .banner-cta{
+      margin-bottom: 50px;
+  }
+}
+@media(max-width: 419px){
+  #bookTaxi label, .banner-form #bookTaxi .form_column > input{
+      font-size: 14px;
+  }
+}
+
+
+/*Accordion*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion .active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion .active:after {
+  content: "\2212";
+}
+
+.accordion .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/*Accordion*/
+
+
+
+
 .banner{
   position: relative;
 }
@@ -577,7 +707,6 @@ header .navbar #menu > li > a{
 .packages .row > div .details_holder h2, .packages .row > div .details_holder i{
   color: var(--primary-color);
 }
-
 /*Packages End*/
 
 
@@ -730,7 +859,9 @@ header .navbar #menu > li > a{
   margin-left: auto;
   margin-right: auto;
 }
-
+.taxi-page{
+  padding: 60px 0;
+}
 
 
 
@@ -962,4 +1093,9 @@ header .navbar #menu > li > a{
       margin-right: initial;
       margin-top: 20px;
     }
+  }
+
+
+  .passport{
+    display: none;
   }

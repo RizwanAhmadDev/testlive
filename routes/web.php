@@ -22,6 +22,7 @@ Route::get('/blogs', function () {    return view('userview.blogs');});
 Route::get('/contact', function () {    return view('userview.contactus');});
 Route::get('/packages', function () {    return view('userview.packages');});
 Route::get('/about', function () {    return view('userview.aboutus');});
+Route::get('/taxi', function () {    return view('userview.taxi');});
 
 
 

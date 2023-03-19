@@ -93,6 +93,27 @@ p{
 .section-head h1{
   margin-bottom: 25px;
 }
+
+.section-title{
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.section-title .button-holder a{
+  margin-left: 0 auto;
+}
+@media(min-width: 480px){
+  .section-title{
+      flex-flow: row;
+      padding: 10px 30px;
+      justify-content: space-between
+  }
+}
+
+
+
 /*Header Style Start*/
 header.header{
     padding: 10px 0;
@@ -577,7 +598,6 @@ header .navbar #menu > li > a{
 .packages .row > div .details_holder h2, .packages .row > div .details_holder i{
   color: var(--primary-color);
 }
-
 /*Packages End*/
 
 
