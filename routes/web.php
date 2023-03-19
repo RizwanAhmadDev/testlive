@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\taxiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,7 @@ Route::get('/contact', function () {    return view('userview.contactus');});
 Route::get('/packages', function () {    return view('userview.packages');});
 Route::get('/about', function () {    return view('userview.aboutus');});
 
-
+Route::post('store_taxi', [taxiController::class,'store_taxi'])->name('store_taxi');
 
 
 

@@ -56,11 +56,12 @@
                   </div>
                 </div>
                 <div class="banner-form">
-                  <form id="bookTaxi">
+                  <form id="bookTaxi" action="{{route('store_taxi')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <h3>Book your Taxi</h3>
                     <input type="text" name="name" placeholder="Name">
                     <input type="text" name="countryname" placeholder="Country Name">
-                    <input type="text" name="ph_nmbr" placeholder="Phone with Country Code">
+                    <input type="text" name="ph_nmbr" placeholder="Whatsapp Number">
                     <input type="text" name="pickup_addr" placeholder="Pick up Address">
                     <input type="text" name="destination" placeholder="Destination">
                     <select name="selectvehicle" id="selectvehicle">
