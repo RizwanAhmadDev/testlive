@@ -12,7 +12,8 @@ use Illuminate\Queue\SerializesModels;
 class EnquirySubmitted extends Mailable
 {
     use Queueable, SerializesModels;
-    public $enquiry;
+    public $data;
+
     // public $user;
     /**
      * Create a new message instance.
@@ -22,7 +23,7 @@ class EnquirySubmitted extends Mailable
     public function __construct()
     {
         //
-        $this->enquiry = $enquiry;
+        $this->data = $data;
         // $this->user = $user;
     }
 
@@ -51,21 +52,24 @@ class EnquirySubmitted extends Mailable
     }
     public function build()
 {
-    return $this->view('email')
-                ->subject('New User Enquiry')
-                ->with([
-                    'name' => $this->user['name'],
-                    'email' => $this->user['email'],
-                    'phone' => $this->user['phone'],
-                    'country' => $this->user['country'],
-                    'british_citizen' => $this->user['british_citizen'],
-                    'taxi' => $this->user['taxi'],
-                    'hotel' => $this->user['hotel'],
-                    'ticket' => $this->user['ticket'],
-                    'umrah_package' => $this->user['umrah_package'],
-                    'pickup' => $this->user['pickup'],
-                    'destination' => $this->user['destination'],
-                ]);
+    // return $this->view('email')
+    //             ->subject('New User Enquiry')
+    //             ->with([
+    //                 'name' => $this->user['name'],
+    //                 'email' => $this->user['email'],
+    //                 'phone' => $this->user['phone'],
+    //                 'country' => $this->user['country'],
+    //                 'british_citizen' => $this->user['british_citizen'],
+    //                 'taxi' => $this->user['taxi'],
+    //                 'hotel' => $this->user['hotel'],
+    //                 'ticket' => $this->user['ticket'],
+    //                 'umrah_package' => $this->user['umrah_package'],
+    //                 'pickup' => $this->user['pickup'],
+    //                 'destination' => $this->user['destination'],
+    //             ]);
+
+    return $this->subject('Enquiry - '. $this->data->subject)
+                    ->view('email');
 }
 
 
