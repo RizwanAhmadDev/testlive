@@ -21,8 +21,8 @@
                 <h4>About</h4>
               </div>
               <ul id="footer_menu" class="contact_footer">
-                <li><i class="fa fa-envelope"></i><a href="mailto:support@mytaxiservice.com">support@mytaxiservice.com</a></li>
-                <li><i class="fa fa-phone"></i><a href="tel:+966 596704817">+966 596704817</a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:info@mahiltaxibooking.com">info@mahiltaxibooking.com</a></li>
+                <li><i class="fa fa-phone"></i><a href="tel:+44 7999 451002">+44 7999 451002</a></li>
                 <li><i class="fa fa-location-dot"></i><span>7676 Hazard Center Dr.</span> <br><span class="footer-addr-padd">San Diego, CA 92108</span></li>
               </ul>
             </div>

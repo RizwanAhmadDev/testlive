@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -24,7 +25,7 @@ Route::get('/packages', function () {    return view('userview.packages');});
 Route::get('/about', function () {    return view('userview.aboutus');});
 Route::get('/taxi', function () {    return view('userview.taxi');});
 
-
+Route::post('StoreEnquiry', [EnquiryController::class,'store_enquiry'])->name('store_enquiry');
 
 
 

@@ -53,7 +53,7 @@ p{
   padding: 0 15px;
 }
 .primary-btn{
-  padding: 15px 10px;
+  padding: 10px;
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   font-size: 18px;
@@ -456,41 +456,51 @@ width: 100%;
 
 
 /*Accordion*/
+.accordion-holder{
+  padding: 0 30px;
+}
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: var(--primary-color);
+  color: #000;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 10px 20px;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+  transition: all 0.8s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-
-.accordion .active, .accordion:hover {
-  background-color: #ccc;
+.accordion h2{
+  margin-bottom: 0;
+}
+.active, .accordion:hover {
+background-color: rgba(254,205,24,0.75);
 }
 
 .accordion:after {
   content: '\002B';
-  color: #777;
+  color: #000;
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  font-size: 40px;
 }
 
-.accordion .active:after {
-  content: "\2212";
+.active:after {
+content: "\2212";
 }
 
-.accordion .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.panel {
+padding: 0;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: all 0.7s ease-in-out;
+border: 1px solid #eee;
 }
 /*Accordion*/
 
@@ -681,6 +691,9 @@ width: 100%;
 
 
 /*Packages*/
+.packages{
+  padding-bottom: 60px;
+}
 .packages .row{
   display: flex;
   flex-flow: row wrap;
@@ -689,16 +702,17 @@ width: 100%;
 .packages .row > div{
   width: 100%;
   border: 1px solid #eee;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   box-shadow: 0 0 10px #e2e2e2;
-  max-width: 360px;
+  max-width: 350px;
   margin-left: 10px;
   margin-right: 10px
 }
 .packages .row > div .details_holder {
   padding: 15px;
 }
-.packages .row > div .details_holder > *:not(.pkg_footer_holder){
+.packages .row > div .details_holder > *:not(.button-holder){
   margin-bottom: 10px;
 }
 .packages .row > div .image-holder, .packages .row > div .image-holder img{
@@ -713,11 +727,145 @@ width: 100%;
 
 
 
+/*Passport*/
 
+.passport{
+  padding: 50px 0;
+  background-color: #000;
+}
+.passport .columns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.passport .image-holder img{
+  max-width: 100%;
+  height: 100%;
+}
+.passport .image-holder{
+  width: 100%;
+  text-align: center;
+}
+.passport .content-holder{
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+.passport .content-holder a{
+  margin-left: auto;
+  margin-right: auto;
+}
+.passport .contact-block{
+  width: 15%;
+}
+@media(min-width: 576px){
+  .passport .image-holder{
+  width: 30%;
+}
+  .passport .content-holder{
+      width: 70%;
+  }
 
+}
+@media(min-width: 992px){
+  .passport .image-holder, .passport .content-holder{
+  width: initial;
+}
+}
+@media(min-width: 1200px){
+  .passport .image-holder, .passport .content-holder{
+  margin: 0 30px
+}
+}
 
+/*Passport*/
 
-
+/*Ticket*/
+.tickets{
+  padding: 50px 0;
+}
+.tickets .image-holder{
+  margin-bottom: -4px;
+}
+.tickets .image-holder img{
+  max-width: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 20px;
+}
+.tickets .row{
+  display: flex;
+  max-width: 1440px;
+  justify-content: center;
+  border: 1px solid #eee;
+  margin: 0 auto;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.tickets .row .column_01{
+  width: 20%;
+}
+.tickets .row .column_02{
+  width: 60%;
+  padding: 0 40px;
+}
+.tickets .row .column_03{
+  width: 20%;
+  background-color: #000;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets .row .column_02 .content-holder{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+}
+.tickets .row .column_03 .btn-holder{
+  width: 100%;
+}
+.tickets .row .column_03 .btn-holder a{
+  margin: 0 auto;
+}
+@media(max-width: 991px){
+  .tickets .row{
+      flex-flow: column;
+      border-radius: 0;
+      max-width: 500px;
+  }
+  .tickets .row .column{
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
+  }
+  .tickets .row .content-holder{
+      padding: 30px 0;
+      text-align: center;
+  }
+  .tickets .row .column_03 .btn-holder{
+      padding: 30px 0;
+  }
+  .tickets .row .content-holder h2{
+      font-size: 24px;
+  }
+  .tickets .row .column img{
+      border-radius: 0;
+      width: 100%;
+  }
+}
+@media(min-width: 1200px){
+.tickets .row .column_02 h2{
+  font-size: 36px;
+}
+.tickets .row .column_02 h3{
+  font-size: 26px;
+  font-weight: 600;
+}}
 
 
 
@@ -727,7 +875,7 @@ width: 100%;
 
 /*X Grid Start*/
 .grid-cols{
-  padding: 0 0 40px 0;
+  padding: 40px 0;
 }
 .grid-cols .row{
   display: flex;
@@ -829,6 +977,9 @@ width: 100%;
 
 
 /*Cars Section*/
+.car-items{
+  padding: 40px 0;
+}
 .car-items .row{
   display: flex;
   flex-flow: row wrap;
@@ -844,7 +995,6 @@ width: 100%;
   max-width: 100%;
 }
 .car-items .column #car-menu li{
-  text-align: center;
   margin-bottom: 5px;
 }
 .car-items .column #car-menu li i{
@@ -862,8 +1012,17 @@ width: 100%;
 .taxi-page{
   padding: 60px 0;
 }
-
-
+#car-menu{
+  padding: 0 10px;
+}
+@media(max-width: 767px){
+  .car-items .column #car-menu li i{
+  padding-right: 5px;
+}
+.car-items .column #car-menu li{
+  font-size: 14px;
+}
+}
 
 
 
@@ -1093,9 +1252,4 @@ width: 100%;
       margin-right: initial;
       margin-top: 20px;
     }
-  }
-
-
-  .passport{
-    display: none;
   }

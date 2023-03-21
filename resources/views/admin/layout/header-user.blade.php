@@ -17,14 +17,14 @@
                                     <li><a href="{{url('contact')}}">Contact</a></li>
                                     <li><a href="{{url('blogs')}}">Blog</a></li>
                                 </ul>
-                                <div class="drop-header-ph"><i class="fa-sharp fa-solid fa-phone-volume"></i><a href="tel:+966 596704817">+966 596704817</a></div>
+                                <div class="drop-header-ph"><i class="fa-sharp fa-solid fa-phone-volume"></i><a href="https://wa.me/447999451002">+44 7999 451002</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="header-links">
                     <div class="header-ph-holder">
-                        <div class="header-ph"><a href="tel:+966 596704817"><i class="fa-sharp fa-solid fa-phone-volume"></i>+966 596704817</a></div>
+                        <div class="header-ph"><a href="https://wa.me/447999451002"><i class="fa-sharp fa-solid fa-phone-volume"></i>+44 7999 451002</a></div>
                     </div>
                 </div>
                 <div class="hamburger">
