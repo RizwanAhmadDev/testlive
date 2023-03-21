@@ -1,5 +1,7 @@
 @extends('admin.layout.layout-user')
 @section('content')
+
+
       <section class="banner">
           <div class="banner-holder">
             <div class="banner-slider">
@@ -189,139 +191,6 @@
                 <a href="/contact" class="primary-btn">Contact Us</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="grid-cols">
-        <div class="container">
-          <div class="section-head">
-            <h1>Our Values</h1>
-          </div>
-          <div class="row">
-            <div class="column-holder row-reverse">
-              <div class="column column_03 content-column">
-                <div class="content-holder">
-                  <div class="content-heading">
-                    <h3>Executive Staff Service</h3>
-                  </div>
-                  <div class="content-desc">
-                    <p>Our Staff are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="column column_05 image-column">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677754467/taxi_02_il8u10.jpg" alt="Taxi">
-                </div>
-              </div>
-          </div>
-
-            <div class="column-holder">
-              <div class="column column_01 content-column">
-                <div class="content-holder">
-                  <div class="content-heading">
-                    <h3>Reliable & Professional</h3>
-                  </div>
-                  <div class="content-desc">
-                    <p>We are proud to offer a reliable service, tailored to meet your requirements and schedule, on time, every time.</p>
-                    <p>Whether you’re hiring one of our vehicles for your wedding day, airport transfer or corporate event, your will arrive promptly and provide any assistance you require. We will ensure that you reach your destination in style and on time.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="column column_02 image-column">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751356/taxi_lkhqod.jpg" alt="Taxi">
-                </div>
-              </div>
-            </div>
-
-            <div class="column-holder row-reverse">
-              <div class="column column_03 content-column">
-                <div class="content-holder">
-                  <div class="content-heading">
-                    <h3>Your Safety is Our Priority</h3>
-                  </div>
-                  <div class="content-desc">
-                    <p>Our chauffeurs are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="column column_05 image-column">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751463/taxi_01_yuhlwb.jpg" alt="Taxi">
-                </div>
-              </div>
-          </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="passport">
-        <div class="container">
-          <div class="row">
-            <div class="columns">
-              <div class="image-holder">
-                <img src=" {{ asset('assets/images/passport.jpg') }}" alt="Umrah">
-              </div>
-              <div class="content-holder">
-                <h1>Are you British Citizen?</h1>
-                <h2>Avail Our Visa Services.</h2>
-                <a href="/contact" class="primary-btn">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="car-items">
-        <div class="container">
-          <div class="section-head">
-            <h1>Booking Options</h1>
-          </div>
-          <div class="row">
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="{{ asset('assets/images/gmc.png') }}" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah to Madina: 1000 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Makkah: 500 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Madina: 400 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Jaddah Airport to Makkah Hotels: 350 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah hotel to Jaddah: 300 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Madina to Madina hotel: 200 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Madina hotel Madina Airport: 200 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah Taif Ziyarat: 700 Riyal</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                <img src="{{ asset('assets/images/h1.png') }}" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah to Madina: 700 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Makkah: 350 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Madina: 300 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Jaddah Airport to Makkah Hotels: 350 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah hotel to Jaddah: 300 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Madina to Madina hotel: 200 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Madina hotel Madina Airport: 200 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah Taif Ziyarat: 700 Riyal</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="car-btn-holder">
-            <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
           </div>
         </div>
       </section>
@@ -682,7 +551,140 @@
           </div>
         </div>
       </section>
+      
+      <section class="grid-cols">
+        <div class="container">
+          <div class="section-head">
+            <h1>Our Values</h1>
+          </div>
+          <div class="row">
+            <div class="column-holder row-reverse">
+              <div class="column column_03 content-column">
+                <div class="content-holder">
+                  <div class="content-heading">
+                    <h3>Executive Staff Service</h3>
+                  </div>
+                  <div class="content-desc">
+                    <p>Our Staff are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column column_05 image-column">
+                <div class="image-holder">
+                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677754467/taxi_02_il8u10.jpg" alt="Taxi">
+                </div>
+              </div>
+          </div>
 
+            <div class="column-holder">
+              <div class="column column_01 content-column">
+                <div class="content-holder">
+                  <div class="content-heading">
+                    <h3>Reliable & Professional</h3>
+                  </div>
+                  <div class="content-desc">
+                    <p>We are proud to offer a reliable service, tailored to meet your requirements and schedule, on time, every time.</p>
+                    <p>Whether you’re hiring one of our vehicles for your wedding day, airport transfer or corporate event, your will arrive promptly and provide any assistance you require. We will ensure that you reach your destination in style and on time.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column column_02 image-column">
+                <div class="image-holder">
+                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751356/taxi_lkhqod.jpg" alt="Taxi">
+                </div>
+              </div>
+            </div>
+
+            <div class="column-holder row-reverse">
+              <div class="column column_03 content-column">
+                <div class="content-holder">
+                  <div class="content-heading">
+                    <h3>Your Safety is Our Priority</h3>
+                  </div>
+                  <div class="content-desc">
+                    <p>Our chauffeurs are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column column_05 image-column">
+                <div class="image-holder">
+                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751463/taxi_01_yuhlwb.jpg" alt="Taxi">
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="car-items">
+        <div class="container">
+          <div class="section-head">
+            <h1>Booking Options</h1>
+          </div>
+          <div class="row">
+            <div class="column car-column">
+              <div class="column-content">
+                <div class="image-holder">
+                  <img src="{{ asset('assets/images/gmc.png') }}" alt="Car">
+                </div>
+                <div class="car-props">
+                  <ul id="car-menu">
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah to Madina: 1000 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Makkah: 500 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Madina: 400 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Jaddah Airport to Makkah Hotels: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah hotel to Jaddah: 300 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Madina to Madina hotel: 200 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Madina hotel Madina Airport: 200 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah Taif Ziyarat: 700 Riyal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="column car-column">
+              <div class="column-content">
+                <div class="image-holder">
+                <img src="{{ asset('assets/images/h1.png') }}" alt="Car">
+                </div>
+                <div class="car-props">
+                  <ul id="car-menu">
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah to Madina: 700 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Makkah: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Madina: 300 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Jaddah Airport to Makkah Hotels: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah hotel to Jaddah: 300 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Madina to Madina hotel: 200 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Madina hotel Madina Airport: 200 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah Taif Ziyarat: 700 Riyal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-btn-holder">
+            <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="passport">
+        <div class="container">
+          <div class="row">
+            <div class="columns">
+              <div class="image-holder">
+                <img src=" {{ asset('assets/images/passport.jpg') }}" alt="Umrah">
+              </div>
+              <div class="content-holder">
+                <h1>Are you British Citizen?</h1>
+                <h2>Avail Our Visa Services.</h2>
+                <a href="/contact" class="primary-btn">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
 @endsection
 

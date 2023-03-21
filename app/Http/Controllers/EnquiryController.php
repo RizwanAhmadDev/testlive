@@ -32,6 +32,8 @@ class EnquiryController extends Controller
         //     ];
         //     $this->validate($request, $rules, $CustomMessage);
 
+
+
         $enquiry= new Enquiry;
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
@@ -45,9 +47,27 @@ class EnquiryController extends Controller
         $enquiry->pickup = $request->pickup_addr;
         $enquiry->destination = $request->destination;
         $enquiry->save();
+
+        $data=$enquiry;
+
+        // dd($data);
+            $data=[
+                'name'=>$request->name,
+                'email' => $request->email,
+                'phone' => $request->ph_nmbr,
+                'country' => $request->countryname,
+                'british_citizen' => $request->british_citizen,
+                'taxi' => $request->formTaxi,
+                'hotel' => $request->formHotels,
+                'ticket' => $request->forTickets,
+                'umrah_package' => $request->umrahpkg,
+                'pickup' => $request->pickup_addr,
+                'destination' => $request->destination,
+            ];
+
         // Enquiry::create($enquiry);
         // dd($enquiry);
-        // Mail::to('rizahmaddev@gmail.com')->send(new EnquirySubmitted($enquiry));
+        Mail::to('rizahmaddev@gmail.com')->send(new EnquirySubmitted($data));
         // return redirect()->back()->with('success', 'Your enquiry has been submitted successfully. We will get in touch with you soon.');
 
         return redirect()->back()->with('status',"Enquiry Submitted Successfully");

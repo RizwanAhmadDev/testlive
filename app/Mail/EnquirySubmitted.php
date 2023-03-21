@@ -20,7 +20,7 @@ class EnquirySubmitted extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
         $this->data = $data;
@@ -47,7 +47,7 @@ class EnquirySubmitted extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'email',
         );
     }
     public function build()
@@ -68,8 +68,9 @@ class EnquirySubmitted extends Mailable
     //                 'destination' => $this->user['destination'],
     //             ]);
 
-    return $this->subject('Enquiry - '. $this->data->subject)
-                    ->view('email');
+    // return $this->subject('Enquiry - '. $this->data->subject)
+    //                 ->view('email');
+    return $this->view('email')->subject('Booking Information')->from('mahiltaxibooking@gmail.com')->with('data',$this->data);
 }
 
 
