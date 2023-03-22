@@ -2,7 +2,7 @@
         <div class="container">
             <div class="header-holder">
                 <div class="logo-wrap">
-                    <a href="#">
+                    <a href="/">
                         <img class="logo" src="{{ asset('assets/images/header_logo.png') }}">
                     </a>
                 </div>
@@ -15,7 +15,7 @@
                                     <li><a href="{{url('taxi')}}">Taxi</a></li>
                                     <li><a href="{{url('about')}}">About</a></li>
                                     <li><a href="{{url('contact')}}">Contact</a></li>
-                                    <li><a href="{{url('blogs')}}">Blog</a></li>
+                                    <li><a href="{{url('packages')}}">Packages</a></li>
                                 </ul>
                                 <div class="drop-header-ph"><i class="fa-sharp fa-solid fa-phone-volume"></i><a href="https://wa.me/447999451002">+44 7999 451002</a></div>
                             </div>

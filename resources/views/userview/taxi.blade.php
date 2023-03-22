@@ -1,6 +1,6 @@
 @extends('admin.layout.layout-user')
 @section('content')
-<section class="car-items taxi-page">
+<section class="car-items">
         <div class="container">
           <div class="section-head">
             <h1>Booking Options</h1>
@@ -9,13 +9,18 @@
             <div class="column car-column">
               <div class="column-content">
                 <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_01_sot2sq.png" alt="Car">
+                  <img src="{{ asset('assets/images/gmc.png') }}" alt="Car">
                 </div>
                 <div class="car-props">
                   <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah to Madina: 1000 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Makkah: 500 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Madina: 400 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Jaddah Airport to Makkah Hotels: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah hotel to Jaddah: 300 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Madina to Madina hotel: 200 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Madina hotel Madina Airport: 200 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah Taif Ziyarat: 700 Riyal</li>
                   </ul>
                 </div>
               </div>
@@ -24,113 +29,27 @@
             <div class="column car-column">
               <div class="column-content">
                 <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_02_uxawu4.png" alt="Car">
+                <img src="{{ asset('assets/images/h1.png') }}" alt="Car">
                 </div>
                 <div class="car-props">
                   <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_04_f1btjm.png" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_03_t9oxbb.png" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-         
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_03_t9oxbb.png" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_04_f1btjm.png" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_02_uxawu4.png" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677755130/car_01_sot2sq.png" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>Up to 3 passengers</li>
-                    <li><i class="fa fa-solid fa-check"></i>2 pieces of baggage</li>
-                    <li><i class="fa fa-solid fa-check"></i>Toyota Corolla, Prius</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah to Madina: 700 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Makkah: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Madina: 300 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Jaddah Airport to Makkah Hotels: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah hotel to Jaddah: 300 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Madina to Madina hotel: 200 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Madina hotel Madina Airport: 200 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah Taif Ziyarat: 700 Riyal</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
           <div class="car-btn-holder">
-            <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
+            <a href="tel:+44 7999 451002" class="primary-btn" id="carBtn">Book Ride</a>
           </div>
         </div>
       </section>
-              @endsection
 
-
+      @endsection

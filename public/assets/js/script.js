@@ -79,6 +79,13 @@ $(function() {
 });
 
 
+$("#carBtn").click(function(e) {
+  e.preventDefault();
+  $('html,body').animate({
+      scrollTop: $(".banner").offset().top}, 'slow');
+});
+
+
 
 
 
@@ -97,6 +104,31 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+$("#single").select2({
+  placeholder: "Pickup Location",
+});
+
+$("#single_02").select2({
+  placeholder: "Destination Location",
+});
+
+
+
+$("#bookTaxi #phone").intlTelInput();
+$(document).ready(function () {
+  $('#umrahpkg').on('click',function () {
+      $('input[type=checkbox]').each(
+        function (index, checkbox) {
+          if (index != 3) {
+              checkbox.checked = false;
+          }
+      });
+  });
+});
+
+
+
 
 
 

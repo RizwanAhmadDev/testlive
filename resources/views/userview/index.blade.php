@@ -27,7 +27,7 @@
                     <h1>Lets Book Your Taxi Instantly</h1>
                   <p>Book Your Taxi for Umrah in no time. Umrah Taxi(تاكسي العمرة المميز ) service is ready to help you in your Holy Journey. We provide the best Mecca to Medina taxi service.                </p>
                   <div class="banner-cta-btn">
-                    <a href="#" class="primary-btn">Book Now</a>
+                    <a href="/taxi" class="primary-btn">Book Now</a>
                   </div>
                   </div>
                   <div class="banner-testimonials">
@@ -63,7 +63,7 @@
                       <div class="form_column">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="email" required name="email"placeholder="Email">
-                        <input type="text" name="ph_nmbr" placeholder="Phone with Country Code">
+                        <input type="text" id="phone" name="ph_nmbr" placeholder="Phone Number">
                         <input type="text" name="countryname" placeholder="Country Name">
                         <select name="british_citizen">
                           <option value="">Are you British Citizen?</option>
@@ -85,8 +85,110 @@
                           <input type="checkbox" id="umrahpkg" name="umrahpkg" value="need umrah package">
                           <label for="umrahpkg"> Umrah Package (All in one)</label>
                         </div>
-                        <input type="text" name="pickup_addr" placeholder="Pick up Address">
-                        <input type="text" name="destination" placeholder="Destination">
+                        <!-- <input type="text" name="pickup_addr" placeholder="Pick up Address"> -->
+                        <select id="single" class="single-dropdown">
+                          <option></option>  
+                          <option>Al Kiswah Towers Hotel</option>
+                          <option>Makkah Towers</option>
+                          <option>Hotel Pullman ZamZam Makkah</option>
+                          <option>Jabal Omar Marriott Hotel</option>
+                          <option>Makkah</option>
+                          <option>Novotel Makkah Thaker City</option>
+                          <option>Hilton Makkah Convention Hotel</option>
+                          <option>M Hotel Al Dana Makkah by Millennium</option>
+                          <option>Swissôtel Makkah</option>
+                          <option>Fairmont Makkah Clock Royal Tower</option>
+                          <option>Conrad Makkah</option>
+                          <option>Park Inn by Radisson</option>
+                          <option>Makkah Al Naseem</option>
+                          <option>DoubleTree by Hilton Makkah Jabal Omar</option>
+                          <option>Four Points by Sheraton Makkah Al Naseem</option>
+                          <option>Revan Hotel</option>
+                          <option>Hilton Suites Makkah</option>
+                          <option>Royal Al Mashaer Hotel</option>
+                          <option>Makkah Hotel</option>
+                          <option>Millennium Makkah Al Naseem</option>
+                          <option>Elaf Bakkah Hotel</option>
+                          <option>Swissôtel Al Maqam Makkah</option>
+                          <option>King Abdulaziz International Airport</option>
+                          <option>King Khaled International Airport</option>
+                          <option>King Fahd International Airport</option>
+                          <option>Prince Mohammad Bin Abdulaziz Airport</option>
+                          <option>Gassim Airport</option>
+                          <option>Ta’if Regional Airport</option>
+                          <option>Prince Abdulmohsin Bin Abdulaziz Airport</option>
+                          <option>Abha Regional Airport</option>
+                          <option>Tabuk Airport</option>
+                          <option>Ha'il Airport</option>
+                          <option>Al Ahsa Airport</option>
+                          <option>Jizan Regional Airport</option>
+                          <option>Al Baha Airport</option>
+                          <option>Bisha Airport</option>
+                          <option>Gurayat Domestic Airport</option>
+                          <option>Nejran Airport</option>
+                          <option>Al Qaisumah/Hafr Al Batin Airport</option>
+                          <option>Rafha Domestic Airport</option>
+                          <option>Arar Domestic Airport</option>
+                          <option>Sharurah Airport</option>
+                          <option>Al-Jawf Domestic Airport</option>
+                          <option>Turaif Domestic Airport</option>
+                          <option>Wadi Al Dawasir Airport</option>
+                          <option>Al Wajh Domestic Airport</option>
+                          <option>King Salman Abdulaziz Airport</option>
+                          <option>King Khaled Military City Airport</option>
+                        </select>
+                        <!-- <input type="text" name="destination" placeholder="Destination"> -->
+                        <select id="single_02" class="single-dropdown">
+                          <option></option>  
+                          <option>Al Kiswah Towers Hotel</option>
+                          <option>Makkah Towers</option>
+                          <option>Hotel Pullman ZamZam Makkah</option>
+                          <option>Jabal Omar Marriott Hotel</option>
+                          <option>Makkah</option>
+                          <option>Novotel Makkah Thaker City</option>
+                          <option>Hilton Makkah Convention Hotel</option>
+                          <option>M Hotel Al Dana Makkah by Millennium</option>
+                          <option>Swissôtel Makkah</option>
+                          <option>Fairmont Makkah Clock Royal Tower</option>
+                          <option>Conrad Makkah</option>
+                          <option>Park Inn by Radisson</option>
+                          <option>Makkah Al Naseem</option>
+                          <option>DoubleTree by Hilton Makkah Jabal Omar</option>
+                          <option>Four Points by Sheraton Makkah Al Naseem</option>
+                          <option>Revan Hotel</option>
+                          <option>Hilton Suites Makkah</option>
+                          <option>Royal Al Mashaer Hotel</option>
+                          <option>Makkah Hotel</option>
+                          <option>Millennium Makkah Al Naseem</option>
+                          <option>Elaf Bakkah Hotel</option>
+                          <option>Swissôtel Al Maqam Makkah</option>
+                          <option>King Abdulaziz International Airport</option>
+                          <option>King Khaled International Airport</option>
+                          <option>King Fahd International Airport</option>
+                          <option>Prince Mohammad Bin Abdulaziz Airport</option>
+                          <option>Gassim Airport</option>
+                          <option>Ta’if Regional Airport</option>
+                          <option>Prince Abdulmohsin Bin Abdulaziz Airport</option>
+                          <option>Abha Regional Airport</option>
+                          <option>Tabuk Airport</option>
+                          <option>Ha'il Airport</option>
+                          <option>Al Ahsa Airport</option>
+                          <option>Jizan Regional Airport</option>
+                          <option>Al Baha Airport</option>
+                          <option>Bisha Airport</option>
+                          <option>Gurayat Domestic Airport</option>
+                          <option>Nejran Airport</option>
+                          <option>Al Qaisumah/Hafr Al Batin Airport</option>
+                          <option>Rafha Domestic Airport</option>
+                          <option>Arar Domestic Airport</option>
+                          <option>Sharurah Airport</option>
+                          <option>Al-Jawf Domestic Airport</option>
+                          <option>Turaif Domestic Airport</option>
+                          <option>Wadi Al Dawasir Airport</option>
+                          <option>Al Wajh Domestic Airport</option>
+                          <option>King Salman Abdulaziz Airport</option>
+                          <option>King Khaled Military City Airport</option>
+                        </select>
                         <!-- <select name="selectvehicle" id="selectvehicle">
                           <option value="">Select Vehicle</option>
                           <option value="Camry Car">Camry Car</option>
@@ -186,142 +288,9 @@
             </div>
             <div class="column column_03">
               <div class="btn-holder">
-                <a href="/contact" class="primary-btn">Contact Us</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Contact Us</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="grid-cols">
-        <div class="container">
-          <div class="section-head">
-            <h1>Our Values</h1>
-          </div>
-          <div class="row">
-            <div class="column-holder row-reverse">
-              <div class="column column_03 content-column">
-                <div class="content-holder">
-                  <div class="content-heading">
-                    <h3>Executive Staff Service</h3>
-                  </div>
-                  <div class="content-desc">
-                    <p>Our Staff are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="column column_05 image-column">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677754467/taxi_02_il8u10.jpg" alt="Taxi">
-                </div>
-              </div>
-          </div>
-
-            <div class="column-holder">
-              <div class="column column_01 content-column">
-                <div class="content-holder">
-                  <div class="content-heading">
-                    <h3>Reliable & Professional</h3>
-                  </div>
-                  <div class="content-desc">
-                    <p>We are proud to offer a reliable service, tailored to meet your requirements and schedule, on time, every time.</p>
-                    <p>Whether you’re hiring one of our vehicles for your wedding day, airport transfer or corporate event, your will arrive promptly and provide any assistance you require. We will ensure that you reach your destination in style and on time.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="column column_02 image-column">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751356/taxi_lkhqod.jpg" alt="Taxi">
-                </div>
-              </div>
-            </div>
-
-            <div class="column-holder row-reverse">
-              <div class="column column_03 content-column">
-                <div class="content-holder">
-                  <div class="content-heading">
-                    <h3>Your Safety is Our Priority</h3>
-                  </div>
-                  <div class="content-desc">
-                    <p>Our chauffeurs are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="column column_05 image-column">
-                <div class="image-holder">
-                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751463/taxi_01_yuhlwb.jpg" alt="Taxi">
-                </div>
-              </div>
-          </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="passport">
-        <div class="container">
-          <div class="row">
-            <div class="columns">
-              <div class="image-holder">
-                <img src=" {{ asset('assets/images/passport.jpg') }}" alt="Umrah">
-              </div>
-              <div class="content-holder">
-                <h1>Are you British Citizen?</h1>
-                <h2>Avail Our Visa Services.</h2>
-                <a href="/contact" class="primary-btn">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="car-items">
-        <div class="container">
-          <div class="section-head">
-            <h1>Booking Options</h1>
-          </div>
-          <div class="row">
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                  <img src="{{ asset('assets/images/gmc.png') }}" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah to Madina: 1000 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Makkah: 500 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Madina: 400 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Jaddah Airport to Makkah Hotels: 350 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah hotel to Jaddah: 300 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Madina to Madina hotel: 200 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Madina hotel Madina Airport: 200 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah Taif Ziyarat: 700 Riyal</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="column car-column">
-              <div class="column-content">
-                <div class="image-holder">
-                <img src="{{ asset('assets/images/h1.png') }}" alt="Car">
-                </div>
-                <div class="car-props">
-                  <ul id="car-menu">
-                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah to Madina: 700 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Makkah: 350 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Madina: 300 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Jaddah Airport to Makkah Hotels: 350 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah hotel to Jaddah: 300 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Madina to Madina hotel: 200 Riyal </li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Madina hotel Madina Airport: 200 Riyal</li>
-                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah Taif Ziyarat: 700 Riyal</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="car-btn-holder">
-            <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
           </div>
         </div>
       </section>
@@ -682,7 +651,152 @@
           </div>
         </div>
       </section>
+      
+      <section class="grid-cols">
+        <div class="container">
+          <div class="section-head">
+            <h1>Our Values</h1>
+          </div>
+          <div class="row">
+            <div class="column-holder row-reverse">
+              <div class="column column_03 content-column">
+                <div class="content-holder">
+                  <div class="content-heading">
+                    <h3>Executive Staff Service</h3>
+                  </div>
+                  <div class="content-desc">
+                    <p>Our Staff are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column column_05 image-column">
+                <div class="image-holder">
+                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677754467/taxi_02_il8u10.jpg" alt="Taxi">
+                </div>
+              </div>
+          </div>
 
+            <div class="column-holder">
+              <div class="column column_01 content-column">
+                <div class="content-holder">
+                  <div class="content-heading">
+                    <h3>Reliable & Professional</h3>
+                  </div>
+                  <div class="content-desc">
+                    <p>We are proud to offer a reliable service, tailored to meet your requirements and schedule, on time, every time.</p>
+                    <p>Whether you’re hiring one of our vehicles for your wedding day, airport transfer or corporate event, your will arrive promptly and provide any assistance you require. We will ensure that you reach your destination in style and on time.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column column_02 image-column">
+                <div class="image-holder">
+                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751356/taxi_lkhqod.jpg" alt="Taxi">
+                </div>
+              </div>
+            </div>
+
+            <div class="column-holder row-reverse">
+              <div class="column column_03 content-column">
+                <div class="content-holder">
+                  <div class="content-heading">
+                    <h3>Your Safety is Our Priority</h3>
+                  </div>
+                  <div class="content-desc">
+                    <p>Our chauffeurs are all enhanced DBS-checked professionals with a wealth of driving experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column column_05 image-column">
+                <div class="image-holder">
+                  <img src="https://res.cloudinary.com/decjkxgo7/image/upload/v1677751463/taxi_01_yuhlwb.jpg" alt="Taxi">
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="car-items">
+        <div class="container">
+          <div class="section-head">
+            <h1>Booking Options</h1>
+          </div>
+          <div class="row">
+            <div class="column car-column">
+              <div class="column-content">
+                <div class="image-holder">
+                  <img src="{{ asset('assets/images/gmc.png') }}" alt="Car">
+                </div>
+                <div class="car-props">
+                  <ul id="car-menu">
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah to Madina: 1000 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Makkah: 500 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Ziyarat Madina: 400 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Jaddah Airport to Makkah Hotels: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah hotel to Jaddah: 300 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Madina to Madina hotel: 200 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Madina hotel Madina Airport: 200 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>GMC Makkah Taif Ziyarat: 700 Riyal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="column car-column">
+              <div class="column-content">
+                <div class="image-holder">
+                <img src="{{ asset('assets/images/h1.png') }}" alt="Car">
+                </div>
+                <div class="car-props">
+                  <ul id="car-menu">
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah to Madina: 700 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Makkah: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Ziyarat Madina: 300 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Jaddah Airport to Makkah Hotels: 350 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah hotel to Jaddah: 300 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Madina to Madina hotel: 200 Riyal </li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Madina hotel Madina Airport: 200 Riyal</li>
+                    <li><i class="fa fa-solid fa-check"></i>H1 Makkah Taif Ziyarat: 700 Riyal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-btn-holder">
+            <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="passport">
+        <div class="container">
+          <div class="row">
+            <div class="columns">
+              <div class="image-holder">
+                <img src=" {{ asset('assets/images/passport.jpg') }}" alt="Umrah">
+              </div>
+              <div class="content-holder">
+                <h1>Are you British Citizen?</h1>
+                <h2>Avail Our Visa Services.</h2>
+                <a href="https://wa.me/447999451002" class="primary-btn">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="whatsapp-icon">
+        <a href="https://wa.me/447999451002" target="_blank">
+          <img src="{{ asset('assets/images/whatsapp.png') }}" alt="Whatsapp">
+        </a>
+      </div>
+
+      <div class="phone-icon">
+        <a href="tel:+44 7999 451002">
+          <img src="{{ asset('assets/images/phone.png') }}" alt="Phone">
+        </a>
+      </div>
+      
 
 @endsection
 
