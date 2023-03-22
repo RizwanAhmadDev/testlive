@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>User Enquiry</title>
-</head>
-<body>
-    <h2>User Enquiry</h2>
-    <p>Name: {{ $name }}</p>
-    <p>Email: {{ $email }}</p>
-    <p>Phone: {{ $phone }}</p>
-    <p>Country: {{ $country }}</p>
-    <p>British Citizen: {{ $british_citizen }}</p>
-    <p>Taxi: {{ $taxi }}</p>
-    <p>Hotel: {{ $hotel }}</p>
-    <p>Ticket: {{ $ticket }}</p>
-    <p>Umrah Package: {{ $umrah_package }}</p>
-    <p>Pickup: {{ $pickup }}</p>
-    <p>Destination: {{ $destination }}</p>
-</body>
-</html>
+<h2>Hey !</h2> <br><br>
+Following is my Information Please provide assistance
+in booking. 
+<br><br>
+User details: <br><br>
+
+Name:  {{ $data['name'] }}<br>
+Email:  {{ $data['email']}}<br>
+Phone:  {{ $data['phone']}}<br>
+Country:  {{ $data['country']}}<br>
+British Citizenship:  {{ $data['british_citizen']}}<br>
+Taxi:  {{ $data['taxi']}}<br>
+Hotel:  {{ $data['hotel']}}<br>
+Hotel:  {{ $data['ticket']}}<br>
+Umrah Package:  {{ $data['umrah_package']}}<br>
+Pickup Location:  {{ $data['pickup']}}<br>
+Drop Off Location:  {{ $data['destination']}}<br>
+
+Thanks
