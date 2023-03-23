@@ -780,17 +780,12 @@
               <div class="content-holder">
                 <h1>Are you British Citizen?</h1>
                 <h2>Avail Our Visa Services.</h2>
-<<<<<<< HEAD
                 <a href="https://wa.me/447999451002" class="primary-btn">Contact Us</a>
-=======
-                <a href="/contact" class="primary-btn">Contact Us</a>
->>>>>>> 68928f403e0019ea66fc189dabf097ae40c9811d
               </div>
             </div>
           </div>
         </div>
       </section>
-<<<<<<< HEAD
 
       <div class="whatsapp-icon">
         <a href="https://wa.me/447999451002" target="_blank">
@@ -803,8 +798,6 @@
           <img src="{{ asset('assets/images/phone.png') }}" alt="Phone">
         </a>
       </div>
-=======
->>>>>>> 68928f403e0019ea66fc189dabf097ae40c9811d
       
 
 @endsection
