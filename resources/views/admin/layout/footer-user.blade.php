@@ -4,7 +4,7 @@
             <div class="column column_01">
               <div class="footer-logo">
                 <a href="#">
-                  <img src="{{ asset('assets/images/header_logo.png') }}" alt="Logo">
+                  <img src="{{ asset('assets/images/footer_logo.png') }}" alt="Logo">
                 </a>
               </div>
               <div class="footer-bio">
