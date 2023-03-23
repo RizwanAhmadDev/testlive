@@ -186,7 +186,7 @@
             </div>
             <div class="column column_03">
               <div class="btn-holder">
-                <a href="/contact" class="primary-btn">Contact Us</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Contact Us</a>
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@
               <div class="content-holder">
                 <h1>Are you British Citizen?</h1>
                 <h2>Avail Our Visa Services.</h2>
-                <a href="/contact" class="primary-btn">Contact Us</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Contact Us</a>
               </div>
             </div>
           </div>
@@ -354,7 +354,7 @@
                 <p><strong>£729 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -372,7 +372,7 @@
                 <p><strong>£799 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -390,7 +390,7 @@
                 <p><strong>£869 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -408,7 +408,7 @@
                 <p><strong>£920 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -426,7 +426,7 @@
                 <p><strong>£999 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -444,7 +444,7 @@
                 <p><strong>£1080 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -468,7 +468,7 @@
                 <p><strong>£999 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -486,7 +486,7 @@
                 <p><strong>£860 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -504,7 +504,7 @@
                 <p><strong>£910 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -522,7 +522,7 @@
                 <p><strong>£10,147 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -540,7 +540,7 @@
                 <p><strong>£1999 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -558,7 +558,7 @@
                 <p><strong>£10,147 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -582,7 +582,7 @@
                 <p><strong>£1000 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -600,7 +600,7 @@
                 <p><strong>£986 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -618,7 +618,7 @@
                 <p><strong>£1299 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -636,7 +636,7 @@
                 <p><strong>1699 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -654,7 +654,7 @@
                 <p><strong>£1399 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
@@ -672,7 +672,7 @@
                 <p><strong>£2199 </strong><small>per passenger</small></p>
               </div>
               <div class="button-holder">
-                <a href="/contact" class="primary-btn">Book Now!</a>
+                <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
               </div>
               </div>
               
