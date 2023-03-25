@@ -48,6 +48,30 @@
                     <span class="hide-menu">Users</span>
                 </a>
             </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('Hotel') }}" aria-expanded="false">
+              <span>
+                <i class="ti ti-users"></i>
+              </span>
+                    <span class="hide-menu">Hotel</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('Taxi') }}" aria-expanded="false">
+              <span>
+                <i class="ti ti-users"></i>
+              </span>
+                    <span class="hide-menu">Taxi</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('Route') }}" aria-expanded="false">
+              <span>
+                <i class="ti ti-users"></i>
+              </span>
+                    <span class="hide-menu">Routes</span>
+                </a>
+            </li>
           <li class="sidebar-item">
             <a class="sidebar-link" href="ui-alerts.html" aria-expanded="false">
               <span>

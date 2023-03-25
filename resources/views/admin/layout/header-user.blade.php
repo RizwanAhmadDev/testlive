@@ -15,7 +15,7 @@
                                     <li><a href="{{url('taxi')}}">Taxi</a></li>
                                     <li><a href="{{url('about')}}">About</a></li>
                                     <li><a href="{{url('contact')}}">Contact</a></li>
-                                    <li><a href="{{url('packages')}}">Packages</a></li>
+                                    <li><a href="{{url('hotels')}}">Hotels</a></li>
                                 </ul>
                                 <div class="drop-header-ph"><i class="fa-sharp fa-solid fa-phone-volume"></i><a href="https://wa.me/447999451002">+44 7999 451002</a></div>
                             </div>
