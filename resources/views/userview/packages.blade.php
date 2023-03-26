@@ -33,7 +33,7 @@
                 <a href="/contact" class="primary-btn">Book Now!</a>
               </div>
               </div>
-              
+
             </div>
             @endforeach
           </div>
@@ -60,7 +60,7 @@
                 <a href="/contact" class="primary-btn">Book Now!</a>
               </div>
               </div>
-              
+
             </div>
             @endforeach
           </div>
@@ -69,7 +69,6 @@
           <button class="accordion"><h3>5 Star Hotels</h3></button>
           <div class="panel">
           <div class="row">
-            
           @foreach($star_5 as $item)
           <div class="column">
               <div class="image-holder">
@@ -87,7 +86,7 @@
                 <a href="/contact" class="primary-btn">Book Now!</a>
               </div>
               </div>
-              
+
             </div>
           </div>
           @endforeach

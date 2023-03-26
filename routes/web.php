@@ -10,6 +10,7 @@ use App\Http\Controllers\HotelController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\TaxiController;
 use App\Http\Controllers\HomeController ;
+use App\Http\Controllers\CheckoutController ;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,18 +23,21 @@ use App\Http\Controllers\HomeController ;
 |
 */
 
-// Route::get('/', function () {    return view('userview.index');});
+
 Route::get('/blogs', function () {    return view('userview.blogs');});
 Route::get('/contact', function () {    return view('userview.contactus');});
-Route::get('/checkout', function () {    return view('userview.checkout');});
-// Route::get('/hotels', function () {    return view('userview.packages');});
 Route::get('/about', function () {    return view('userview.aboutus');});
-// Route::get('/taxi', function () {    return view('userview.taxi');});
-Route::get('taxi', [RouteController::class,'Route_frontend'])->name('Route_frontend');
+
+
+Route::get('AllVehicles', [RouteController::class,'all_vehicles'])->name('all_vehicles');
 Route::get('hotels', [HotelController::class,'Hotel_frontend'])->name('Hotel_frontend');
 
 Route::post('StoreEnquiry', [EnquiryController::class,'store_enquiry'])->name('store_enquiry');
+Route::post('checkout', [CheckoutController::class,'checkout'])->name('checkout');
+
 Route::get('/', [HomeController::class,'home_view'])->name('home_view');
+Route::get('/success', [CheckoutController::class,'success'])->name('success');
+Route::get('/cancel', [CheckoutController::class,'cancel'])->name('cancel');
 Route::get('whatsapp', [EnquiryController::class,'sendwhatsapp'])->name('sendwhatsapp');
 
 
@@ -68,7 +72,7 @@ Route::middleware('auth')->group(function () {
     Route::get('editHotel/{id}',[HotelController::class,'editHotel'])->name('editHotel');
     Route::post('updateHotel/{id}',[HotelController::class,'updateHotel'])->name('updateHotel');
     Route::get('deleteHotel/{id}',[HotelController::class,'deleteHotel'])->name('deleteHotel');
-    
+
     //taxi
     Route::get('taxi/admin', [TaxiController::class,'Taxi'])->name('Taxi');
     Route::get('Taxi/Add_Taxi', [TaxiController::class,'addTaxi'])->name('addTaxi');
@@ -76,7 +80,7 @@ Route::middleware('auth')->group(function () {
     Route::get('editTaxi/{id}',[TaxiController::class,'editTaxi'])->name('editTaxi');
     Route::post('updateTaxi/{id}',[TaxiController::class,'updateTaxi'])->name('updateTaxi');
     Route::get('deleteTaxi/{id}',[TaxiController::class,'deleteTaxi'])->name('deleteTaxi');
-    
+
     //routes
     Route::get('Route/admin', [RouteController::class,'Route'])->name('Route');
     Route::get('Route/Add_Route', [RouteController::class,'addRoute'])->name('addRoute');

@@ -314,7 +314,7 @@ header #menu li{
     margin-right: 0;
 }
 .header-links{
-    display: none;        
+    display: none;
 }
 
 header .navbar #menu > li > a{
@@ -1271,9 +1271,9 @@ border: 1px solid #eee;
       flex-flow: row wrap;
     }
   }
- 
+
   @media(min-width: 992px){
-    
+
     .footer .column_01 .footer-bio{
       width: 90%;
       margin-left: initial;
@@ -1519,7 +1519,7 @@ height: 100%;
       height: 100%;
       padding-left: 0;
       padding-right: 0;
-      
+
   }
   .form-holder > .row{
       padding-bottom: 30px;
@@ -1531,7 +1531,7 @@ height: 100%;
       display: flex;
       flex-flow: column;
   }
-  
+
 }
 @media(min-width: 992px){
   .form-holder > .row > .column > div{
@@ -1556,7 +1556,7 @@ height: 100%;
   margin-bottom: 4rem;
 }
 
-.bricks-wrapper .entry__thumb, 
+.bricks-wrapper .entry__thumb,
 .bricks-wrapper .entry__text {
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
@@ -1645,7 +1645,7 @@ height: 100%;
   margin-bottom: var(--vspace-0_5);
 }
 
-.bricks-wrapper .entry__title a, 
+.bricks-wrapper .entry__title a,
 .bricks-wrapper .entry__title a:visited {
   color: black;
 }
@@ -1656,7 +1656,7 @@ height: 100%;
   margin-bottom: calc(0.125 * var(--space));
 }
 
-.bricks-wrapper .entry__meta a, 
+.bricks-wrapper .entry__meta a,
 .bricks-wrapper .entry__meta a:visited {
   color: black;
 }
@@ -1957,7 +1957,7 @@ height: 100%;
 .your_order_checkout .more-shopping-btn{
   margin-top: 15px;
 }
-.your_order_checkout .more-shopping-btn a{
+.your_order_checkout .more-shopping-btn button{
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;

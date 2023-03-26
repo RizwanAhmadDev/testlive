@@ -14,11 +14,26 @@ class RouteController extends Controller
         $route = Route::all();
         return view('userview.route.Route', compact('route'));
     }
-    public function Route_frontend()
+    public function all_vehicles()
     {
         $car = Route::all();
         return view('userview.taxi', compact('car'));
     }
+    // public function sonata()
+    // {
+    //     $car = Route::all();
+    //     return view('userview.Sonata', compact('car'));
+    // }
+    // public function gmc()
+    // {
+    //     $car = Route::all();
+    //     return view('userview.GMC', compact('car'));
+    // }
+    // public function h1()
+    // {
+    //     $car = Route::all();
+    //     return view('userview.H1', compact('car'));
+    // }
 
     public function addRoute()
     {
@@ -32,20 +47,7 @@ class RouteController extends Controller
     {
 
         if($request->isMethod('post')){
-            $data = $request->all();
-            // $rules = [
-            //     'name' => 'required',
-            //     'taxi_picture' => 'required',
-            // ];
-
-            // $CustomMessage = [
-            //     'name.required' => 'name is required',
-            //     'taxi_picture.required' => 'taxi_picture is required',
-                
-            // ];
-            // $this->validate($request, $rules, $CustomMessage);
-
-                // dd($request->taxi_id);
+            // $data = $request->all();
             $route = new Route;
             $route->name = $request->name;
             $route->price = $request->price;

@@ -29,12 +29,12 @@ $(function() {
       autoplayTimeout: 4000
     });
   });
-  
 
-$("#carBtn").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".banner").offset().top}, 'slow');
-});
+
+// $("#carBtn").click(function() {
+//     $('html,body').animate({
+//         scrollTop: $(".banner").offset().top}, 'slow');
+// });
 
 
 
@@ -79,11 +79,11 @@ $(function() {
 });
 
 
-$("#carBtn").click(function(e) {
-  e.preventDefault();
-  $('html,body').animate({
-      scrollTop: $(".banner").offset().top}, 'slow');
-});
+// $("#carBtn").click(function(e) {
+//   e.preventDefault();
+//   $('html,body').animate({
+//       scrollTop: $(".banner").offset().top}, 'slow');
+// });
 
 
 
@@ -101,7 +101,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 

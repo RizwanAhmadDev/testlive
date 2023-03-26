@@ -12,7 +12,7 @@
                             <div class="header-menu">
                                 <ul id="menu">
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="{{url('taxi')}}">Taxi</a></li>
+                                    <li><a href="{{url('AllVehicles')}}">Taxi</a></li>
                                     <li><a href="{{url('about')}}">About</a></li>
                                     <li><a href="{{url('contact')}}">Contact</a></li>
                                     <li><a href="{{url('hotels')}}">Hotels</a></li>
