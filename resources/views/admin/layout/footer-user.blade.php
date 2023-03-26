@@ -8,7 +8,7 @@
                 </a>
               </div>
               <div class="footer-bio">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium quaerat consequuntur nulla consequatur placeat tenetur libero asperiores, expedita officiis laborum, alias itaque cupiditate quasi soluta quo adipisci ipsa optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>Book a ride with us and experience the ultimate in convenience, safety, and reliability. Our fleet of modern vehicles and experienced drivers are ready to take you to your destination, whether you're traveling solo or in a group. From airport transfers to city tours, we offer a range of flexible options to suit your needs. Contact us today to learn more and start your journey!</p>
               </div>
               <div class="footer-contact">
                 <ul id="footer-options">
@@ -22,8 +22,7 @@
               </div>
               <ul id="footer_menu" class="contact_footer">
                 <li><i class="fa fa-envelope"></i><a href="mailto:info@mahiltaxibooking.com">info@mahiltaxibooking.com</a></li>
-                <li><i class="fa fa-phone"></i><a href="tel:+44 7999 451002">+44 7999 451002</a></li>
-                <li><i class="fa fa-location-dot"></i><span>7676 Hazard Center Dr.</span> <br><span class="footer-addr-padd">San Diego, CA 92108</span></li>
+                <li><i class="fa fa-phone"></i><a href="https://wa.me/447999451002">+44 7999 451002</a></li>
               </ul>
             </div>
             <div class="column column_03">

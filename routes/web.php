@@ -6,6 +6,10 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\HotelController;
+use App\Http\Controllers\RouteController;
+use App\Http\Controllers\TaxiController;
+use App\Http\Controllers\HomeController ;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,14 +22,18 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {    return view('userview.index');});
+// Route::get('/', function () {    return view('userview.index');});
 Route::get('/blogs', function () {    return view('userview.blogs');});
 Route::get('/contact', function () {    return view('userview.contactus');});
-Route::get('/packages', function () {    return view('userview.packages');});
+// Route::get('/hotels', function () {    return view('userview.packages');});
 Route::get('/about', function () {    return view('userview.aboutus');});
-Route::get('/taxi', function () {    return view('userview.taxi');});
+// Route::get('/taxi', function () {    return view('userview.taxi');});
+Route::get('taxi', [RouteController::class,'Route_frontend'])->name('Route_frontend');
+Route::get('hotels', [HotelController::class,'Hotel_frontend'])->name('Hotel_frontend');
 
 Route::post('StoreEnquiry', [EnquiryController::class,'store_enquiry'])->name('store_enquiry');
+Route::get('/', [HomeController::class,'home_view'])->name('home_view');
+Route::get('whatsapp', [EnquiryController::class,'sendwhatsapp'])->name('sendwhatsapp');
 
 
 
@@ -50,6 +58,32 @@ Route::middleware('auth')->group(function () {
     Route::get('editcategory/{id}',[CategoryController::class,'editcategory'])->name('editcategory');
     Route::post('updatecategory/{id}',[CategoryController::class,'updatecategory'])->name('updatecategory');
     Route::get('deletecategory/{id}',[CategoryController::class,'deletecategory'])->name('deletecategory');
+
+
+    //hotels
+    Route::get('Hotel/admin', [HotelController::class,'Hotel'])->name('Hotel');
+    Route::get('Hotel/Add_Hotel', [HotelController::class,'addHotel'])->name('addHotel');
+    Route::post('Hotel/InserHotel',[HotelController::class,'insertHotel'])->name('insertHotel');
+    Route::get('editHotel/{id}',[HotelController::class,'editHotel'])->name('editHotel');
+    Route::post('updateHotel/{id}',[HotelController::class,'updateHotel'])->name('updateHotel');
+    Route::get('deleteHotel/{id}',[HotelController::class,'deleteHotel'])->name('deleteHotel');
+    
+    //taxi
+    Route::get('taxi/admin', [TaxiController::class,'Taxi'])->name('Taxi');
+    Route::get('Taxi/Add_Taxi', [TaxiController::class,'addTaxi'])->name('addTaxi');
+    Route::post('Taxi/InserTaxi',[TaxiController::class,'insertTaxi'])->name('insertTaxi');
+    Route::get('editTaxi/{id}',[TaxiController::class,'editTaxi'])->name('editTaxi');
+    Route::post('updateTaxi/{id}',[TaxiController::class,'updateTaxi'])->name('updateTaxi');
+    Route::get('deleteTaxi/{id}',[TaxiController::class,'deleteTaxi'])->name('deleteTaxi');
+    
+    //routes
+    Route::get('Route/admin', [RouteController::class,'Route'])->name('Route');
+    Route::get('Route/Add_Route', [RouteController::class,'addRoute'])->name('addRoute');
+    Route::post('Route/InserRoute',[RouteController::class,'insertRoute'])->name('insertRoute');
+    Route::get('editRoute/{id}',[RouteController::class,'editRoute'])->name('editRoute');
+    Route::post('updateRoute/{id}',[RouteController::class,'updateRoute'])->name('updateRoute');
+    Route::get('deleteRoute/{id}',[RouteController::class,'deleteRoute'])->name('deleteRoute');
+
 
 
     Route::get('Posts', [PostController::class,'Posts'])->name('posts');

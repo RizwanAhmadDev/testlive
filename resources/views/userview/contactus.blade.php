@@ -21,10 +21,10 @@
                                             <h2>Let's Get In Touch</h2>
                                             <p>We're open for any suggesstions or just to have a chat.</p>
                                             <ul id="contact-list">
-                                                <li><i class="fa fa-solid fa-location-dot"></i><span>7676 Hazard Center Dr.<br> </span><span class="addr-padding">San Diego, CA 92108</span></li>
-                                                <li><i class="fa fa-solid fa-phone"></i><a href="tel:+966 596704817">+966 596704817</a></li>
-                                                <li><i class="fa fa-solid fa-envelope"></i><a href="support@taxiservice.com">support@taxiservice.com</a></li>
-                                                <li><i class="fa fa-solid fa-globe"></i><a href="#" target="_blank">mytaxiservice.com</a></li>
+                                               
+                                                <li><i class="fa fa-solid fa-phone"></i><a href="https://wa.me/447999451002">+44 7999 451002</a></li>
+                                                <li><i class="fa fa-solid fa-envelope"></i><a href="info@mahiltaxibooking.com">info@mahiltaxibooking.com</a></li>
+                                                <li><i class="fa fa-solid fa-globe"></i><a href="#" target="_blank">mahiltaxibooking.com</a></li>
                                             </ul>
                                         </div>
                                     </div>

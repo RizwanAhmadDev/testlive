@@ -54,7 +54,7 @@ class EnquiryController extends Controller
                 $upackagevalue=$request->umrahpkg;              
             }
             else{
-    $upackagevalue="Don't need taxi";
+    $upackagevalue="Don't need package";
 }   
 $phone = str_replace([' ', '+'], '', $request->ph_nmbr);;
 // dd($string);
@@ -95,10 +95,74 @@ $phone = str_replace([' ', '+'], '', $request->ph_nmbr);;
         // dd($data);
         Mail::to('rizahmaddev@gmail.com')->send(new EnquirySubmitted($data));
         // return redirect()->back()->with('success', 'Your enquiry has been submitted successfully. We will get in touch with you soon.');
-
+        $phone_wa='447999451002';
+        // $phone_wa='923158192177';
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => 'https://graph.facebook.com/v16.0/105626529156308/messages',
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'POST',
+          CURLOPT_POSTFIELDS =>'{
+            "messaging_product": "whatsapp",
+            "to": '. $phone_wa.',
+            "type": "template",
+            "template": {
+                "name": "hello_world",
+                "language": {
+                    "code": "en_US",
+                    
+                }
+               
+            }
+        }',
+          CURLOPT_HTTPHEADER => array(
+            'Authorization:  Bearer EAADzlOf0BN4BAPi4sGWxSOt9GdqKTZAOJhcU2spRg8YcZBJGZCZB7dvRIACQKONT2ZAxzoIlb7En99xcq5ayweMZBGgwoWxgciNoZAhzFSRj1VejnratORxP0e9h1Ly6HnmUiXK3IT6LTQ0A9bt6f6iPkq07NJsUrCaZB1Q2RHpH0zYc5idBx9wHBuQheG7EbLUdLqC96uJEDgZDZD',
+            'Content-Type: application/json'
+          ),
+        ));
+        
+        $response = curl_exec($curl);
+        
+        curl_close($curl);
+        
+        echo $response;
         return redirect()->back()->with('status',"Enquiry Submitted Successfully");
         // }
 
+    }
+    public function sendwhatsapp(){
+        // $url = "https://messages-sandbox.nexmo.com/v1/messages";
+        // $params = ["to" => ["type" => "whatsapp", "number" => "923158192177"],
+        //     "from" => ["type" => "whatsapp", "number" => "14157386102"],
+        //     "message" => [
+        //         "content" => [
+        //             "text" => "Hello from Vonage and Laravel Please reply to this message with a number between 1 and 100"
+        //         ]
+        //     ]
+        // ];
+        // $headers = [
+        //     "Authorization" => "Basic " . base64_encode(env('NEXMO_API_KEY') . ":" . env('NEXMO_API_SECRET')),
+        //     "Content-Type" => "application/json",
+        // ];
+        
+
+    
+        // $client = new \GuzzleHttp\Client();
+        // $response = $client->request('POST', $url, ["headers" => $headers, "json" => $params]);
+        // dd($response);
+        // $data = $response->getBody();
+        // Log::Info($data);
+    
+        // return view('thanks');
+//this code is working for whatsapp message
+        
+        // dd($phone);
+        
     }
 
 }
