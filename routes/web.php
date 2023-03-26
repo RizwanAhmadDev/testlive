@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\HotelController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\TaxiController;
+use App\Http\Controllers\HomeController ;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ use App\Http\Controllers\TaxiController;
 |
 */
 
-Route::get('/', function () {    return view('userview.index');});
+// Route::get('/', function () {    return view('userview.index');});
 Route::get('/blogs', function () {    return view('userview.blogs');});
 Route::get('/contact', function () {    return view('userview.contactus');});
 // Route::get('/hotels', function () {    return view('userview.packages');});
@@ -31,6 +32,7 @@ Route::get('taxi', [RouteController::class,'Route_frontend'])->name('Route_front
 Route::get('hotels', [HotelController::class,'Hotel_frontend'])->name('Hotel_frontend');
 
 Route::post('StoreEnquiry', [EnquiryController::class,'store_enquiry'])->name('store_enquiry');
+Route::get('/', [HomeController::class,'home_view'])->name('home_view');
 Route::get('whatsapp', [EnquiryController::class,'sendwhatsapp'])->name('sendwhatsapp');
 
 

@@ -16,15 +16,16 @@
                   <ul id="car-menu">
                     <li><i class="fa fa-solid fa-check"></i>{{$item->taxiroute->name}} {{$item->name}}: {{$item->price}} {{$item->currency}}</li>
                   </ul>
+                  <div class="car-btn-holder">
+            <a href="tel:+44 7999 451002" class="primary-btn" id="carBtn">Book Ride</a>
+          </div>
                 </div>
               </div>
             </div>
             @endforeach
-           
+         
           </div>
-          <div class="car-btn-holder">
-            <a href="tel:+44 7999 451002" class="primary-btn" id="carBtn">Book Ride</a>
-          </div>
+          
         </div>
       </section>
 
