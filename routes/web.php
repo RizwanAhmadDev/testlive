@@ -25,6 +25,7 @@ use App\Http\Controllers\HomeController ;
 // Route::get('/', function () {    return view('userview.index');});
 Route::get('/blogs', function () {    return view('userview.blogs');});
 Route::get('/contact', function () {    return view('userview.contactus');});
+Route::get('/checkout', function () {    return view('userview.checkout');});
 // Route::get('/hotels', function () {    return view('userview.packages');});
 Route::get('/about', function () {    return view('userview.aboutus');});
 // Route::get('/taxi', function () {    return view('userview.taxi');});

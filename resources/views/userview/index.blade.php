@@ -538,11 +538,17 @@
 
             <div class="column car-column">
               <div class="column-content">
+                <div class="car-title">
+                  <h2>Camry Car</h2>
+                </div>
                 <div class="image-holder">
                   <img src="assets/images/camry.png" alt="Car">
                 </div>
                 <div class="car-props">
                   <ul id="car-menu">
+                  <div class="car-desc">
+                  <p>Camry has the capacity for up to Five Passengers, Generous amount of luggage space</p>
+                </div>
                   <div class="car-btn-holder">
             <a href="#" class="primary-btn" id="carBtn">Book Ride</a>
           </div>
