@@ -63,7 +63,8 @@ class RouteController extends Controller
     public function editRoute($id)
     {
         $route = Route::findOrFail($id);
-        return view('userview.route.editRoute', compact('route'));
+        $taxi = Taxi::all();
+        return view('userview.route.editRoute', compact('route','taxi'));
     }
 
 

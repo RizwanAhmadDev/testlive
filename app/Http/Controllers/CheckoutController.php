@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Route;
 
 class CheckoutController extends Controller
 {
@@ -49,7 +50,8 @@ class CheckoutController extends Controller
 
     }
     public function cancel(){
-        return view('AllVehicles');
+          $car = Route::all();
+        return view('userview.taxi', compact('car'));
 
     }
 }

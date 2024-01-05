@@ -36,7 +36,7 @@
                                         <input type="text" class="form-control" id="title" name="title" >
                                     </div>
                                     <div class="mb-3">
-                                        <label for="stars" class="form-label">Select the Taxi</label>
+                                        <label for="stars" class="form-label">Select Stars</label>
                                         <select name="stars" id="stars" class="form-control">
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
@@ -59,11 +59,11 @@
                                             <label for="seoDescription" class="form-label">Price</label>
                                             <input type="text" name="price" id="seoDescription" class="form-control">
                                         </div>
-                                      
+
                                 </div>
-                              
+
                             </div>
-                            <button type="submit" class="btn btn-primary">Add post</button>
+                            <button type="submit" class="btn btn-primary">Add Hotel</button>
                         </form>
                     </div>
                 </div>

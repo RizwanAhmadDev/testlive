@@ -590,7 +590,7 @@
                         <div class="car-props">
                             <ul id="car-menu">
                                 <div class="car-desc">
-                                    <p>Camry has the capacity for up to Five Passengers, Generous amount of luggage space
+                                    <p>GMC vehicles offer ample space for both passengers and cargo.
                                     </p>
                                 </div>
                                 <div class="car-btn-holder">
@@ -632,7 +632,7 @@
                         <div class="car-props">
                             <ul id="car-menu">
                                 <div class="car-desc">
-                                    <p>Camry has the capacity for up to Five Passengers, Generous amount of luggage space
+                                    <p>The Hyundai Sonata is a mid-size sedan that can comfortably seat up to five passengers.
                                     </p>
                                 </div>
                                 <div class="car-btn-holder">
@@ -653,7 +653,7 @@
                         <div class="car-props">
                             <ul id="car-menu">
                                 <div class="car-desc">
-                                    <p>Camry has the capacity for up to Five Passengers, Generous amount of luggage space
+                                    <p>The H-1 is a 12,3,6 and 9 Seater Van and has a length of 5150 mm, the width of 1920 mm and a wheelbase of 3200 mm
                                     </p>
                                 </div>
                                 <div class="car-btn-holder">
@@ -726,7 +726,7 @@
                                         <p><strong>£{{ $item->price }} </strong><small>per passenger</small></p>
                                     </div>
                                     <div class="button-holder">
-                                        <a href="/contact" class="primary-btn">Book Now!</a>
+                                        <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
                                     </div>
                                 </div>
 
@@ -758,7 +758,7 @@
                                         <p><strong>£{{ $item->price }} </strong><small>per passenger</small></p>
                                     </div>
                                     <div class="button-holder">
-                                        <a href="/contact" class="primary-btn">Book Now!</a>
+                                        <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
                                     </div>
                                 </div>
 
@@ -772,30 +772,28 @@
                 </button>
                 <div class="panel">
                     <div class="row">
-                        @foreach ($star_5 as $item)
-                            <div class="column">
-                                <div class="image-holder">
-                                    <img src="{{ asset('/assets/uploads/hotelimages/' . $item->hotel_image) }} "
-                                        alt="Umrah">
-                                </div>
-                                <div class="details_holder">
-                                    <h2>{{ $item->title }}</h2>
-                                    <h3>{{ $item->stars }} Star <i class="fa-solid fa-star"></i><i
-                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-                                    <h5>{{ $item->nights_in_makkah }}</h5>
-                                    <h5>{{ $item->nights_in_madinah }}</h5>
-                                    <div class="pkg_footer_holder">
-                                        <p><strong>£{{ $item->price }} </strong><small>per passenger</small></p>
-                                    </div>
-                                    <div class="button-holder">
-                                        <a href="/contact" class="primary-btn">Book Now!</a>
-                                    </div>
-                                </div>
+                        <!-- 4 star -->
+                        @foreach($star_5 as $item)
+                        <div class="column">
+                          <div class="image-holder">
+                            <img src="{{ asset('/assets/uploads/hotelimages/'.$item->hotel_image) }} " alt="Umrah">
+                          </div>
+                          <div class="details_holder">
+                            <h2>{{$item->title}}</h2>
+                            <h3>{{$item->stars}} Star <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
+                            <h5>{{$item->nights_in_makkah}}</h5>
+                            <h5>{{$item->nights_in_madinah}}</h5>
+                            <div class="pkg_footer_holder">
+                            <p><strong>£{{$item->price}} </strong><small>per passenger</small></p>
+                          </div>
+                          <div class="button-holder">
+                            <a href="https://wa.me/447999451002" class="primary-btn">Book Now!</a>
+                          </div>
+                          </div>
 
-                            </div>
-                    </div>
-                    @endforeach
+                        </div>
+                        @endforeach
+                      </div>
                 </div>
             </div>
         </div>
@@ -874,6 +872,40 @@
         </div>
     </section>
 
+
+    <section class="reviews">
+            <div class="container">
+                <div class="content-wrapper review-content">
+                    <div class="section testimonial-review">
+                        <div class="section-head">
+                            <h1>What Our Clients Are Saying?</h1>
+                          </div>
+                        <div class="column">
+                        <div class="single-review">
+                            <div class="quote">
+                                I recently used Aahil Makkah Taxi Service to book a taxi for a business trip, and I was very impressed with the experience. The site was very user-friendly and easy to navigate, and I was able to book my ride in just a few minutes.
+                            </div>
+                            <div class="name">
+                            - Rizwan Ahmad
+                            </div>
+                        </div>
+                        <div class="single-review">
+                            <div class="quote">
+                                I recently used Aahil Makkah Taxi Service to book a ride and I was impressed. The site was easy to use and had a great selection of transportation options. My driver was professional and the ride was comfortable. I would use this service again.
+                            </div>
+                            <div class="name">
+                            - Sonika Usman
+                            </div>
+                        </div>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+
+</section>
 
 
     <section class="passport">

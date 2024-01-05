@@ -97,6 +97,17 @@ $phone = str_replace([' ', '+'], '', $request->ph_nmbr);;
         // return redirect()->back()->with('success', 'Your enquiry has been submitted successfully. We will get in touch with you soon.');
         $phone_wa='447999451002';
         // $phone_wa='923158192177';
+         $customer_name =  $enquiry->name;
+        $customer_phone =  $enquiry->phone;
+        $messageData = array(
+            'messaging_product' => "whatsapp",
+            'to' => $phone_wa,
+            'type' => "template",
+            'template' => array("name"=> "form_submission",'language'=>array("code"=>"en_GB"),'components'=>
+               array(array(
+                "type" => "body",
+                "parameters" => array(array("type"=> "text","text"=>  $customer_name),array("type"=> "text","text"=>  $customer_phone),))))
+        );
         $curl = curl_init();
         curl_setopt_array($curl, array(
           CURLOPT_URL => 'https://graph.facebook.com/v16.0/105626529156308/messages',
@@ -107,30 +118,14 @@ $phone = str_replace([' ', '+'], '', $request->ph_nmbr);;
           CURLOPT_FOLLOWLOCATION => true,
           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
           CURLOPT_CUSTOMREQUEST => 'POST',
-          CURLOPT_POSTFIELDS =>'{
-            "messaging_product": "whatsapp",
-            "to": '. $phone_wa.',
-            "type": "template",
-            "template": {
-                "name": "hello_world",
-                "language": {
-                    "code": "en_US",
-                    
-                }
-               
-            }
-        }',
+          CURLOPT_POSTFIELDS => json_encode($messageData),
           CURLOPT_HTTPHEADER => array(
-            'Authorization:  Bearer EAADzlOf0BN4BAPi4sGWxSOt9GdqKTZAOJhcU2spRg8YcZBJGZCZB7dvRIACQKONT2ZAxzoIlb7En99xcq5ayweMZBGgwoWxgciNoZAhzFSRj1VejnratORxP0e9h1Ly6HnmUiXK3IT6LTQ0A9bt6f6iPkq07NJsUrCaZB1Q2RHpH0zYc5idBx9wHBuQheG7EbLUdLqC96uJEDgZDZD',
+            'Authorization:  Bearer EAADzlOf0BN4BAGaLTFFZCEPnvDyaM8TcVEYBDcbr3vfzi662H6jiZAs2SmAXCt1KKCUyxXFO0l7CZA72BuHAZAcHZBwOXDU6TWkHQBOmBg37imqdzxhaaRBTQoJAOnMkqIvFaYGbQOTvZAPIerMhcp6CDRZAK0C8OKyICqlcqsnJF3wBZAAcjA17',
             'Content-Type: application/json'
           ),
         ));
-        
         $response = curl_exec($curl);
-        
         curl_close($curl);
-        
-        echo $response;
         return redirect()->back()->with('status',"Enquiry Submitted Successfully");
         // }
 

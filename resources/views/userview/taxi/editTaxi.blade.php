@@ -6,26 +6,18 @@
             <div class="col-lg-12 d-flex align-items-stretch">
                 <div class="card w-100">
                     <div class="card-body p-4">
-                        <h5 class="card-title fw-semibold mb-4">Edit Category</h5>
-                        <form action=" {{ url('updatecategory/'.$category->id) }}" method="POST">
+                        <h5 class="card-title fw-semibold mb-4">Edit taxi</h5>
+                        <form action=" {{ url('updateTaxi/'.$taxi->id) }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="title" class="form-label">Title</label>
-                                        <input type="text" value="{{ $category->title }}" class="form-control" id="title" name="title" >
+                                        <label for="title" class="form-label">Name</label>
+                                        <input type="text" value="{{ $taxi->name }}" class="form-control" id="title" name="name" >
                                     </div>
                                     <div class="mb-3">
-                                        <label for="description" class="form-label">Description</label>
-                                        <textarea name="description" class="form-control" id="description" cols="30" rows="3">{{ $category->description }}</textarea>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="status" class="form-label">Posts Status</label>
-                                        <select name="status" id="status" class="form-control">
-                                            <option value="Approved">Approved</option>
-                                            <option value="Pending">Pending</option>
-                                            <option value="Decline">Declined</option>
-                                        </select>
+                                        <label for="description" class="form-label">Picture</label>
+                                        <input type="file" id="taxi_picture" name="taxi_picture" class="form-control" value="{{ $taxi->taxi_picture }}">
                                     </div>
                                 </div>
                             </div>

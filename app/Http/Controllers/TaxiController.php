@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Taxi;
-
+use Illuminate\Support\Facades\File;
 class TaxiController extends Controller
 {
     //
@@ -34,7 +34,7 @@ class TaxiController extends Controller
             $CustomMessage = [
                 'name.required' => 'name is required',
                 'taxi_picture.required' => 'taxi_picture is required',
-                
+
             ];
             $this->validate($request, $rules, $CustomMessage);
 
@@ -65,9 +65,17 @@ class TaxiController extends Controller
     public function updateTaxi(Request $request, $id)
     {
         $taxi = Taxi::findOrFail($id);
+        $rules = [
+            'taxi_picture' => 'required',
+        ];
+
+        $CustomMessage = [
+            'taxi_picture.required' => 'Taxi Image is required',
+        ];
+        $this->validate($request, $rules, $CustomMessage);
         if($request->hasFile('taxi_picture'));
         {
-            $destination = 'assets/uploads/taxiimages'.$taxi->taxi_picture;
+            $destination = 'assets/uploads/taxiimages/'.$taxi->taxi_picture;
             if(File::exists($destination))
             {
                 File::delete($destination);
@@ -75,7 +83,7 @@ class TaxiController extends Controller
             $image = $request->file('taxi_picture');
             $imagename = time() . '.' . $image->getClientOriginalExtension();
             $request->taxi_picture->move('assets/uploads/taxiimages', $imagename);
-            $post->taxi_picture = $imagename;
+            $taxi->taxi_picture = $imagename;
         }
         $taxi->name = $request->name;
             $taxi->save();

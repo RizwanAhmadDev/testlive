@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Hotel;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class HotelController extends Controller
 {
@@ -23,7 +24,7 @@ class HotelController extends Controller
 $star_3 = DB::table('hotels')->where('stars', $condition_1)->get();
 $star_4 = DB::table('hotels')->where('stars', $condition_2)->get();
 $star_5 = DB::table('hotels')->where('stars', $condition_3)->get();
-                
+
         return view('userview.packages', compact('star_3','star_4','star_5'));
     }
 
@@ -55,7 +56,7 @@ $star_5 = DB::table('hotels')->where('stars', $condition_3)->get();
                 'nights_in_madinah.required' => 'nights_in_madinah are required',
                 'price.required' => 'price are required',
                 'hotel_image.required' => 'hotel_image is required',
-                
+
             ];
             $this->validate($request, $rules, $CustomMessage);
 
@@ -83,21 +84,47 @@ $star_5 = DB::table('hotels')->where('stars', $condition_3)->get();
     public function editHotel($id)
     {
         $hotel = Hotel::findOrFail($id);
-        return view('userview.hotel.edithotel', compact('hotel'));
+        return view('userview.hotel.editHotel', compact('hotel'));
     }
 
 
     public function updateHotel(Request $request, $id)
     {
         $hotel = Hotel::findOrFail($id);
-            $hotel->title = $request->title;
-            $hotel->description = $request->stars;
-            $hotel->nights_in_makkah = $request->nights_in_makkah;
-            $hotel->nights_in_madinah = $request->nights_in_madinah;
-            $hotel->price = $request->price;
-            $hotel->save();
-        return redirect()->back()->with('status',"Hotel Updates Successfully");
+        $rules = [
+            'hotel_image' => 'nullable|image',
+        ];
+    
+        $customMessages = [
+            'hotel_image.image' => 'The file must be an image.',
+        ];
+    
+        $this->validate($request, $rules, $customMessages);
+    
+        $hotel->title = $request->title;
+    
+        if ($request->hasFile('hotel_image') && $request->file('hotel_image')->isValid()) {
+            // If a new image is uploaded
+            $destination = 'assets/uploads/hotelimages/' . $hotel->hotel_image;
+            if (File::exists($destination)) {
+                File::delete($destination);
+            }
+    
+            $image = $request->file('hotel_image');
+            $imageName = time() . '.' . $image->getClientOriginalExtension();
+            $image->move('assets/uploads/hotelimages', $imageName);
+            $hotel->hotel_image = $imageName;
+        }
+    
+        $hotel->stars = $request->stars;
+        $hotel->nights_in_makkah = $request->nights_in_makkah;
+        $hotel->nights_in_madinah = $request->nights_in_madinah;
+        $hotel->price = $request->price;
+        $hotel->save();
+    
+        return redirect()->back()->with('status', "Hotel updated successfully");
     }
+    
 
 
     public function deleteHotel($id)

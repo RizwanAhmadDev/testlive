@@ -6,27 +6,39 @@
             <div class="col-lg-12 d-flex align-items-stretch">
                 <div class="card w-100">
                     <div class="card-body p-4">
-                        <h5 class="card-title fw-semibold mb-4">Edit Category</h5>
-                        <form action=" {{ url('updatecategory/'.$category->id) }}" method="POST">
+                        <h5 class="card-title fw-semibold mb-4">Edit Route</h5>
+                        <form action=" {{ url('updateRoute/'.$route->id) }}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label for="title" class="form-label">Title</label>
-                                        <input type="text" value="{{ $category->title }}" class="form-control" id="title" name="title" >
+                                        <label for="title" class="form-label">Name</label>
+                                        <input type="text" value="{{ $route->name }}" class="form-control" id="title" name="name" >
                                     </div>
                                     <div class="mb-3">
-                                        <label for="description" class="form-label">Description</label>
-                                        <textarea name="description" class="form-control" id="description" cols="30" rows="3">{{ $category->description }}</textarea>
+                                        <label for="description" class="form-label">Price</label>
+                                        <input type="text" value="{{ $route->price }}" class="form-control" id="title" name="price" >
                                     </div>
                                     <div class="mb-3">
-                                        <label for="status" class="form-label">Posts Status</label>
-                                        <select name="status" id="status" class="form-control">
-                                            <option value="Approved">Approved</option>
-                                            <option value="Pending">Pending</option>
-                                            <option value="Decline">Declined</option>
+                                        <label for="description" class="form-label">Currency</label>
+                                        <input type="text" value="{{ $route->currency }}" class="form-control" id="title" name="currency" >
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="taxi_id" class="form-label">Select the Taxi</label>
+                                        <select name="taxi_id" id="taxi_id" class="form-control">
+                                            @foreach ($taxi as $e)
+                                                <option value="{{ $e->id }}">{{ $e->name }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
+                                    {{-- <div class="mb-3">
+                                        <label for="taxi_id" class="form-label">Select the Taxi</label>
+                                        <select name="taxi_id" id="taxi_id" class="form-control">
+                                           // @foreach ($route as $e)
+                                                <option value="//{{ $e->taxiroute->id }}">//{{ $e->taxiroute->name }}</option>
+                                            //@endforeach
+                                        </select>
+                                    </div> --}}
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Save Changes</button>
